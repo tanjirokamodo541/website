@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1 {
+    position: absolute;
+    left: 0;
+    margin-left: 50px;
+    font: size 60px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    color: rgb(231, 228, 69);
+    
+}
+
+.pfp
+{
+    max-width: -125px;
+    border-radius: 50px;
+}
+
+p{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    margin-left: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    
+    margin-top: 0px;
+    margin-left: 50px;
+    background-color: #faa5a5;
+    color: rgb(255, 255, 255);
+    border: none;
+    height: 40px;
+    width: 90px;
+    border-radius: 40px;
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+.homebuttons
+{
+    margin-left: 350px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    cursor: pointer;
+}
+
+
+
+body{
+
+    display: flex;
+    justify-content: flex-end;
+    min-height: 200vh;
+    min-width: 100vh;
+    max-height: fit-content;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(140, 71, 71, 0.87));
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+
+
+.browse{
+
+color: aliceblue;
+height: 200px;
+width: 10000px;
+}
+
+.loadingpage
+{
+    margin-left: 250px;
+    border-radius: 50px;
+
+}
+
+#background-video {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    object-fit: cover; 
+    z-index: -1;  
+    opacity: 0.5;
+    mask-image: linear-gradient(to bottom, transparent, black 50%, black);
+  }
+
+  .youtube{
+    position: absolute;
+    cursor: pointer;
+    top: 170px;
+    left: 80px;
+    width: 150px;
+    scale: 100%;
+    transition: scale 0.3s;
+}
+
+.youtube:hover{
+
+    scale: 110%;
+}
+
+.youtube:active{
+
+    scale: 90%;
+}
+
+.My-youtube{
+    font-family: "Meow Script", cursive;
+    color: aliceblue;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    scale: 290%;
+    transform: rotate(15deg);
+}
+
+.yt{
+    position: absolute;
+    transform: rotate(25deg);
+    left: 450px;
+    top: 360px;
+    width: 120px;
+}
+
+.image-animation {
+    position: absolute;
+    transform: rotate(30deg);
+    top: 330px;
+    left: 450px;
+    width: 200px; 
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+    animation: switchImages 1.5s infinite;
+  }
+  
+  @keyframes switchImages {
+    0% {
+      background-image: url('chibi1.png'); 
+    }
+    50% {
+      background-image: url('chibi2.png'); 
+    }
+    100% {
+      background-image: url('chibi1.png'); 
+    }
+  }
+
+  .arrow{
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    transform: rotate(-10deg);
+    width: 350px;
+    mix-blend-mode: difference;
+    opacity: 10%;
+    z-index: -1;
+  }
+
+  .tanjiro:hover{
+
+    scale: 105%;
+  }
+
+  .tanjiro:hover ~ .afterfx{
+    transform: rotate(-50deg);
+    left: 900px;
+  }
+
+  .blender{
+    position: absolute;
+    transform: rotate(15deg);
+    width: 150px;
+    top: 550px;
+    left: 1570px;
+    z-index: -1;
+    transition: left 0.5s,transform 0.5s,top 0.5s
+
+  }
+
+  .tanjiro:hover ~ .blender{
+    transform: rotate(20deg);
+    top: 250px;
+    left: 1670px;
+
+  }
+
+  .contents{
+    position: absolute;
+    left: 60px;
+   
+  }
+
+
+@media (min-width: 500px){  /* This is a pc browser version */
+
+
+
+  body{
+    min-height: 200vh;
+    min-width: 800vh;
+    overflow-y: hidden;
+  }
+
+  .tanjiro{
+    opacity: 100%;
+    position: absolute;
+    top:0;
+    width: 1000px;
+    left: 890px;
+    scale: 100%;
+    transition: scale 1s;
+  }
+
+  .afterfx{
+    position: absolute;
+    transform: rotate(-35deg);
+    width: 150px;
+    top: 550px;
+    left: 1070px;
+    z-index: -1;
+    transition: left 0.5s,transform 0.5s;
+
+  }
+
+  .blender{
+    position: absolute;
+    transform: rotate(15deg);
+    width: 150px;
+    top: 550px;
+    left: 1570px;
+    z-index: -1;
+    transition: left 0.5s,transform 0.5s,top 0.5s
+
+  }
+
+
+}
+
+@media (max-width: 600px){  /* This is a mobile browser version */
+
+  body{
+
+    display: flex;
+    justify-content: flex-end;
+    min-height: 200vh;
+    min-width: 100vh;
+    max-height: fit-content;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) , rgba(140, 71, 71, 0.87));
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+
+#background-video {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  object-fit: cover; 
+  z-index: -1;  
+  opacity: 0.5;
+  mask-image: linear-gradient(to bottom, transparent, black 50%, black);
+}
+
+  h1 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    font: size 60px;
+    font-family: "Parkinsans", sans-serif;
+    font-weight: 600;
+    color: rgb(231, 228, 69);
+    
+}
+
+p{
+  position: absolute;
+  left: 0;
+  top: 70px;
+  margin-left: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  .tanjiro{
+    opacity: 100%;
+    position: absolute;
+    top:400px;
+    width: 300px;
+    left: 0px;
+    scale: 100%;
+    transition: scale 1s;
+  }
+
+  .afterfx{
+    position: absolute;
+    transform: rotate(-35deg);
+    width: 50px;
+    top: 560px;
+    left: 40px;
+    z-index: -1;
+    transition: left 0.5s,transform 0.5s;
+
+  }
+  
+  .tanjiro:hover ~ .afterfx{
+    transform: rotate(-50deg);
+    left: 10px;
+  }
+
+  .blender{
+    position: absolute;
+    transform: rotate(15deg);
+    width: 60px;
+    top: 530px;
+    left: 200px;
+    z-index: -1;
+    transition: left 0.5s,transform 0.5s,top 0.5s
+
+  }
+  .tanjiro:hover ~ .blender{
+    transform: rotate(20deg);
+    top: 550px;
+    left: 250px;
+
+  }
+
+  .My-youtube{
+    font-family: "Meow Script", cursive;
+    color: aliceblue;
+    position: absolute;
+    top: 330px;
+    left: 120px;
+    scale: 220%;
+    transform: rotate(15deg);
+}
+
+.arrow{
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  transform: rotate(-10deg);
+  width: 350px;
+  mix-blend-mode: difference;
+  opacity: 10%;
+  z-index: -1;
+}
+.image-animation {
+  position: absolute;
+  transform: rotate(30deg);
+  top: 340px;
+  left: 290px;
+  width: 110px; 
+  height: 110px; 
+  background-size: cover;
+  background-position: center;
+  animation: switchImages 1.5s infinite;
+}
+
+}
